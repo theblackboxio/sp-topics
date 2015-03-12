@@ -1,0 +1,64 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 64px;
+    height: 100vh;
+}
+
+body > div.container-fluid {
+    height: 100%;
+}
+
+div.row {
+    padding-top: 10px;
+}
+
+div.row.second-level-navbar {
+    position: fixed;
+    color: white
+    top: 64px;
+    background: white;
+    z-index: 100;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    width: 100%;
+    background-color: #34302d;
+}
+
+div.row.second-level-navbar ~ div.row {
+    padding-top: 67px;
+    height: 100%;
+}
+
+div.row.second-level-navbar ~ div.row > div{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+ul.topic-stack > li {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+ul.topic-stack > li:hover {
+    background-color: #fcffc9;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.bs-component .panel-body {
+    padding: 0;
+}
+.bs-component table thead tr th {
+    background-color: red;
+    padding: 0;
+    height: 0;
+    border-bottom: 0;
+}
+

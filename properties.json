@@ -1,0 +1,31 @@
+{
+    "development" : {
+        "deploy" : {
+            "path" : "/Library/WebServer/Documents/demo/sp-service"
+        },
+        "database" : {
+            "host" : "localhost",
+            "name" : "sptopics",
+            "port" : "3306",
+            "user" : "root",
+            "password" : "root",
+            "driver" : "mysql"
+        }
+    },
+    "production" : {
+        "deploy" : {
+            "host" : "",
+            "user" : "",
+            "key" : "",
+            "remotePath" : ""
+        },
+        "database" : {
+            "host" : "localhost",
+            "name" : "sptopics",
+            "port" : "3306",
+            "user" : "root",
+            "password" : "root",
+            "driver" : "mysql"
+        }
+    }
+}
